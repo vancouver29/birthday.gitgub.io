@@ -13,8 +13,14 @@
         margin: 0px auto;
         font-family: Cursive;
         text-align: center;
-        color: green;
+        color: blue;
         font-size: 20px;
+      }
+
+      header p {
+        text-align: center;
+        position: absolute;
+        left: 40%;
       }
 
       .navigation {
@@ -81,8 +87,8 @@
       }
 
       .adresse {
-        width: 300px;
-        height: 98px;
+        width: 500px;
+        height: 200px;
         background-color: rgb(230, 230, 230);
         color: red;
         flow: auto;
@@ -90,7 +96,7 @@
         border: 2px dashed rgb(161, 161, 161);
         padding: 6px;
         font-family: serif;
-        font-size: 13px;
+        font-size: 30px;
       }
 
       .adresse li {
@@ -179,6 +185,16 @@
       .col-sm-8 {
         list-style-type: none;
       }
+
+      .row p {
+        font-size: 20px;
+      }
+
+      #invitation {
+        font-size: 20px;
+        color: white;
+        text-shadow: 3px 2px red;
+      }
     </style>
   </head>
   <body id="bodyBackground">
@@ -193,29 +209,41 @@
       <p>Einladung zu meinem Geburtstag</p>
     </header>
 
-    <div class="video"></div>
+    <div class="content">
+      <img
+        src="http://vignette1.wikia.nocookie.net/studio-ghibli/images/1/1f/Totoro.gif/revision/latest?cb=20130110181320"
+        id="totoro1"
+      />
+      <img
+        src="https://images-na.ssl-images-amazon.com/images/I/51sV%2BRHyXOL._SY450_.jpg"
+        id="totoro2"
+      />
+      <img
+        src="https://www.kasandbox.org/programming-images/creatures/Hopper-Cool.png"
+        id="hopper"
+      />
 
-    <img
-      src="http://vignette1.wikia.nocookie.net/studio-ghibli/images/1/1f/Totoro.gif/revision/latest?cb=20130110181320"
-      id="totoro1"
-    />
-    <img
-      src="https://images-na.ssl-images-amazon.com/images/I/51sV%2BRHyXOL._SY450_.jpg"
-      id="totoro2"
-    />
-    <img
-      src="https://www.kasandbox.org/programming-images/creatures/Hopper-Cool.png"
-      id="hopper"
-    />
-
-    <h1>I möchte dich herzlich zu meinem <br />Geburtstag einladen</h1>
-    <p>Die Einladung:</p>
-    <ul class="adresse">
-      <li>Mittwoch, 7.4.2020 um 16 Uhr</li>
-      <li>1000 Berlin , aktuelle Adresse</li>
-      <li>Lauri</li>
-      <li>RSVP: Lauri 0123 456 7890</li>
-    </ul>
+      <h1>I möchte dich herzlich zu meinem <br />Geburtstag einladen</h1>
+      <p id="invitation">Die Einladung:</p>
+      <ul class="adresse">
+        <li>Mittwoch, 7.4.2020 um 16 Uhr</li>
+        <li>1000 Berlin , aktuelle Adresse</li>
+        <li>Lauri</li>
+        <li>RSVP: Lauri 0123 456 7890</li>
+      </ul>
+    </div>
+    <div class="video">
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/RtQUCatTFDE"
+        frameborder="0"
+        allow="accelerometer; 
+	  autoplay; clipboard-write; encrypted-media; 
+	  gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
 
     <footer class="container">
       <div class="row">
@@ -234,11 +262,6 @@
           <li class="col-sm-1">
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/archive/e/e7/20160929161413%21Instagram_logo_2016.svg"
-            />
-          </li>
-          <li class="col-sm-1">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/en/f/fa/Padlock-silver-medium.svg"
             />
           </li>
         </ul>
